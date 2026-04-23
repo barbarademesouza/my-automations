@@ -14,6 +14,12 @@ Draft a PRD with the following section:
 - **Who**: The primary users or stakeholders affected
 - **Impact**: What happens if we don't solve this problem
 
-Once the draft is ready, publish it as a new Confluence page under the space `~CONFLUENCE_SPACE` at `https://deliveryhero.atlassian.net` using the Confluence MCP tool. Set the title to the feature name from $ARGUMENTS and place it under the "Product / PRDs" parent page.
+Once the draft is ready, publish it as a new Confluence page via the Confluence REST API (`POST https://deliveryhero.atlassian.net/wiki/rest/api/content`) with these exact parameters:
+- **Space key**: `GCC`
+- **Parent page ID**: `1418821909` (the "PRDs" page at https://atlassian.cloud.deliveryhero.group/wiki/spaces/GCC/pages/1418821909/PRDs)
+- **Title**: the feature name from $ARGUMENTS
+- **Credentials**: load `CONFLUENCE_API_TOKEN` and the Confluence username from `/Users/b.de.5/my-automations/.env`
+
+The page viewer URL will be at `https://atlassian.cloud.deliveryhero.group/wiki/spaces/GCC/pages/<page-id>/`.
 
 Confirm the page URL once published.
