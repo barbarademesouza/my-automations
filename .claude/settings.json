@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "atlassian": {
+      "command": "uvx",
+      "args": ["mcp-atlassian"],
+      "env": {
+        "CONFLUENCE_URL": "https://deliveryhero.atlassian.net",
+        "CONFLUENCE_USERNAME": "REPLACE_WITH_YOUR_EMAIL",
+        "CONFLUENCE_API_TOKEN": "REPLACE_WITH_YOUR_API_TOKEN"
+      }
+    }
+  }
+}
