@@ -1,5 +1,9 @@
 Create a Product Requirements Document (PRD) for: $ARGUMENTS
 
+## Pre-flight
+
+Before doing anything else, check if the environment variable `CONFLUENCE_API_TOKEN` is set by running `echo $CONFLUENCE_API_TOKEN` in bash. If it is empty or unset, run `source .env` from the repository root to load credentials. If `.env` is not found, stop and ask the user to run `source .env` manually before continuing.
+
 ## Instructions
 
 Draft a PRD with the following section:
